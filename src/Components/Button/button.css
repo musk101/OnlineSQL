@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.my-btn {
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(91.89deg, #6f57ff -5.11%, #25d8ff 152.73%);
+    color: white;
+    height: 55px;
+    width: 300px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}

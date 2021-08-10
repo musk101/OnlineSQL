@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+.header {
+  font-family: Montserrat;
+  background: linear-gradient(91.52deg, #3051ff 0.45%, #25d8ff 107.04%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  padding-left: 2%;
+  padding-top: 2%;
+  font-size: 1.75rem;
+}
