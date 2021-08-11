@@ -1,13 +1,27 @@
-import React, {ReactElement} from "react";
-import './button.css';
-function CustomButton({text, onClick}: {text: string, onClick: any}): ReactElement {
-    return (
-      <div>
+import React, { ReactElement } from "react";
+import "./button.css";
+function CustomButton({
+  text,
+  onClick,
+  border
+}: {
+  text: string;
+  onClick: any;
+  border: any;
+}): ReactElement {
+  return (
+    <div>
+      {border ? (
         <button onClick={onClick} className={"my-btn"}>
-            {text}
+          {text}
         </button>
-      </div>
-    );
+      ) : (
+        <button onClick={onClick} className={"border-button"}>
+          {text}
+        </button>
+      )}
+    </div>
+  );
 }
 
 export default CustomButton;

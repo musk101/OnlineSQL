@@ -9,7 +9,20 @@
     background: linear-gradient(91.89deg, #6f57ff -5.11%, #25d8ff 152.73%);
     color: white;
     height: 55px;
-    width: 300px;
+    width: 200px;
     font-weight: 600;
     font-size: 1.2rem;
+}
+.border-button {
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+    border: 1px solid #6f57ff;
+    border-radius: 15px;
+    color: white;
+    height: 55px;
+    width: 200px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: transparent;
 }

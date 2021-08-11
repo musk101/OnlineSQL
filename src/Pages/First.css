@@ -1,0 +1,29 @@
+.landing-text-heading {
+  font-family: Montserrat;
+  color: white;
+  align-content: left;
+  font-size: 3rem;
+  text-align: left;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  
+}
+.landing-text {
+  font-family: Montserrat;
+  color: white;
+  align-content: left;
+  font-size: 1rem;
+  text-align: left;
+  padding-bottom: 1rem;
+  line-height:1.6;
+  letter-spacing: 0.5px;
+}
+.landing-features{
+    font-family: Montserrat;
+    color: white;
+    align-content: left;
+    font-size: 1rem;
+    text-align: left;
+    
+  }
+  
