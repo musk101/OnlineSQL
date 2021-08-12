@@ -1,5 +1,5 @@
 import "./row.css";
-import Grid, { GridSpacing } from "@material-ui/core/Grid";
+import Grid  from "@material-ui/core/Grid";
 export default function Roww({ img, title, description, direction }: any) {
   return (
     <div className={"main-page-row"}>

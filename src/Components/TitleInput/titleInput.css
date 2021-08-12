@@ -1,15 +1,5 @@
-#ide-pattern {
-    background-color: #1c006f;
-    font-family: "Montserrat", sans-serif;
-    color: #3000c0;
-    border-radius: 16px;
-    border: 1px solid transparent;
-    font-size: 1rem;
-    padding: 1rem;
-    width: 50%;
-}
 
-x {
+textarea {
     display: block;
     box-sizing: border-box;
     width: 100%;
@@ -22,5 +12,19 @@ x {
     font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
     background-color: #1c006f;
+    color: #3000c0;
+}
+
+#title-inp-txt {
+    background-color: #1c006f;
+    font-family: "Montserrat", sans-serif;
+    color: #3000c0;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 50%;
+}
+input#title-inp-txt::placeholder {
     color: #3000c0;
 }

@@ -4,7 +4,7 @@ export default function Row({ img, title, description }: any) {
     <div
       className={"main-page-row"}
       style={{
-        width: "90%",
+        backgroundColor: "red",
         height: "20vh",
         display: "flex",
         flex: 1,

@@ -2,6 +2,8 @@
 
 .main-page-row {
     font-family: Montserrat;
+    width: 90%;
+    align-items: center;
 }
 .title-card {
   background: linear-gradient(91.52deg, #3051ff 0.45%, #25d8ff 107.04%);

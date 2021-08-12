@@ -4,7 +4,7 @@ import CustomButton from "../Components/Button/button";
 import Roww from "../Components/Row/roww";
 import img from "../Assets/img/landingImage_1.png";
 import img2 from "../Assets/img/landingImage_2.svg";
-import tick from "../Assets/img/tick.png";
+// import tick from "../Assets/img/tick.png";
 import Header from "../Components/Header";
 import databaseStorage from "../Assets/img/dbimg/database-storage.png";
 import sql from "../Assets/img/dbimg/sql.png";
@@ -14,7 +14,7 @@ import Grid from "@material-ui/core/Grid";
 export default function First() {
   return (
     <div>
-      <Grid container justifyContent="center">
+      <Grid container justifyContent="center"   alignItems="center">
         <Grid item md={4}>
           <Header />
           <p className="landing-text-heading">
@@ -50,7 +50,8 @@ export default function First() {
           <Header />
         </Grid>
 
-        <Grid item md={12}>
+        <Grid item md={12} justifyContent="center"
+  alignItems="center">
           <Roww
             img={img}
             direction="row"
