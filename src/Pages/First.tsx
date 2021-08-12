@@ -5,6 +5,7 @@ import Roww from "../Components/Row/roww";
 import img from "../Assets/img/landingImage_1.png";
 import img2 from "../Assets/img/landingImage_2.svg";
 // import tick from "../Assets/img/tick.png";
+import gif from "../Assets/img/landing-gif.gif";
 import Header from "../Components/Header";
 import databaseStorage from "../Assets/img/dbimg/database-storage.png";
 import sql from "../Assets/img/dbimg/sql.png";
@@ -46,12 +47,11 @@ export default function First() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item md={6}>
-          <Header />
+        <Grid item md={6} >
+          <img src={gif} alt="editor-gif"  width="500" height="400" className="landing-gif"/>
         </Grid>
 
-        <Grid item md={12} justifyContent="center"
-  alignItems="center">
+        <Grid item md={12}  style={{marginLeft:"3rem", marginTop:"5rem"}}>
           <Roww
             img={img}
             direction="row"
@@ -61,7 +61,7 @@ export default function First() {
             }
           />
         </Grid>
-        <Grid item md={12}>
+        <Grid item md={12} style={{marginLeft:"8rem", marginTop:"5rem"}}>
           <Roww
             img={img2}
             direction="row-reverse"
