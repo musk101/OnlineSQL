@@ -2,18 +2,21 @@
 
 > SQL Editor which we can use without installing anything.
 > Make a table, insert data into it and run your queries!
+> 15+ editor themes available
 ---
 [![UI ](https://img.shields.io/badge/Demo-Link-blue?style=flat-square&logo=appveyor)](https://musk-sql-editor.netlify.app/)
 
 ## Features
 -    User Friendly
 -   Easy to use.
+-   Stores the previous query so that user can start from where he/she left
 
 ## What did I use?
 - React JS
 - Typescript
 - HTML & CSS
 - Material UI
+- React Ace (For Editor)
 
 ## Contributors
   <tr>
