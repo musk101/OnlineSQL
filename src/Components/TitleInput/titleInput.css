@@ -18,7 +18,7 @@ textarea {
 #title-inp-txt {
     background-color: #1c006f;
     font-family: "Montserrat", sans-serif;
-    color: #3000c0;
+    color: white;
     border-radius: 16px;
     border: 1px solid transparent;
     font-size: 1rem;
@@ -26,5 +26,5 @@ textarea {
     width: 50%;
 }
 input#title-inp-txt::placeholder {
-    color: #3000c0;
+    color: white;
 }

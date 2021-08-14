@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../Components/Header";
 import AceEditor from "react-ace";
 import IconButton from "@material-ui/core/IconButton";
@@ -47,21 +47,32 @@ import TitleInput from "../Components/TitleInput/titleInput";
 import run from "../Assets/img/run.png";
 import save from "../Assets/img/save.png";
 import "./Second.css";
+import Tooltip from "@material-ui/core/Tooltip";
 import axios from "axios";
 
 export default function Second() {
   const [themeName, setThemeName] = useState("monokai"); //updating the theme of the editor when option is clicked
-
+  const [output, setOutput] = useState("");
+  const [Query, setQuery] = useState("");
   const QueryCall = async () => {
     try {
       let response = await axios.post(
         "https://c293c534-d126-4141-a887-f76861baa1df.mock.pstmn.io/sql-result" //create a stub for customer data in csv
       );
       console.log(response);
+      setOutput(response.data);
     } catch (err) {
       alert("Error");
     }
   };
+  const alertPopup = () => {
+    alert("saved successfully");
+    localStorage.setItem("saved query", Query); //key value pair with key as saved query
+  };
+  useEffect(() => {
+    let queryStored = localStorage.getItem("saved query") || ""; //it will return null if nothing is there otherwise the saved string
+    setQuery(queryStored); //updating the state on page load
+  }, []);
   return (
     <div
     // style={{
@@ -72,10 +83,10 @@ export default function Second() {
       <Grid container alignItems={"center"} style={{ marginTop: "3rem" }}>
         <Grid item md={4}>
           <Grid container>
-            <Grid item md={4}>
+            <Grid item md={4} style={{ marginLeft: "3rem" }}>
               <Header />
             </Grid>
-            <Grid item md={8}>
+            <Grid item md={8} style={{ marginLeft: "1rem" }}>
               <select
                 id="ide-pattern"
                 onChange={(e) => {
@@ -130,14 +141,17 @@ export default function Second() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item md={3} style={{ marginLeft: "auto" }}>
-          <IconButton>
-            <img src={run} alt="run-command" height="70" width="70" />
-          </IconButton>
-
-          <IconButton>
-            <img src={save} alt="save-command" height="50" width="50" />
-          </IconButton>
+        <Grid item md={2} style={{ marginLeft: "auto" }}>
+          <Tooltip title="Run Your Code">
+            <IconButton onClick={QueryCall}>
+              <img src={run} height="50" width="50" />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title="Save">
+            <IconButton onClick={alertPopup}>
+              <img src={save} height="30" width="30" />
+            </IconButton>
+          </Tooltip>
         </Grid>
       </Grid>
       <Grid container>
@@ -150,6 +164,8 @@ export default function Second() {
               marginTop: "1rem",
               borderRadius: "16px",
             }}
+            value={Query}
+            onChange={(e) => setQuery(e)}
             placeholder="Write Your SQL Queries"
             mode="mysql"
             theme={themeName}
@@ -169,7 +185,10 @@ export default function Second() {
         </Grid>
         <Grid item md={6}>
           <TitleInput
-            style={{ width: "90%", height: "86%", marginTop: "2rem" }}
+            isTextarea={true}
+            value={output}
+            placeholder="Output Of Your Query"
+            style={{ width: "90%", height: "97%", marginTop: "1rem" }}
           />
         </Grid>
       </Grid>
