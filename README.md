@@ -10,6 +10,7 @@
 -    User Friendly
 -   Easy to use.
 -   Stores the previous query so that user can start from where he/she left
+-   Page Load time: Page load time will be calculated by going to lighhouse in developer tools and from there we can generate report to get the same. Page load time of my app is 2020 ms.
 
 ## What did I use?
 - React JS
