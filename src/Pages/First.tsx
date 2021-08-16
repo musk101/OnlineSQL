@@ -13,6 +13,9 @@ import sql from "../Assets/img/dbimg/sql.png";
 import mysql from "../Assets/img/dbimg/mysql.png";
 import connection from "../Assets/img/dbimg/connection.png";
 import Grid from "@material-ui/core/Grid";
+import 'lazysizes';
+// import a plugin
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 export default function First() {
   let history = useHistory();
   return (

@@ -157,13 +157,8 @@ export default function Second() {
       <Grid container>
         <Grid item md={6}>
           <AceEditor
-            style={{
-              height: "70vh",
-              width: "90%",
-              marginLeft: "3rem",
-              marginTop: "1rem",
-              borderRadius: "16px",
-            }}
+          className="ace-editor"
+            
             value={Query}
             onChange={(e) => setQuery(e)}
             placeholder="Write Your SQL Queries"

@@ -1,14 +1,4 @@
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
-      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
 
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
 .landing-text-heading {
   font-family: Montserrat;
   color: white;
@@ -35,7 +25,7 @@
   font-size: 1rem;
   text-align: left;
 }
-.landing-gif {
+.lazyload {
   border: 0.5px solid #6f57ff;
   border-radius: 20px;
   box-shadow: 0 0 0.75rem 0.05rem #5541ff;
